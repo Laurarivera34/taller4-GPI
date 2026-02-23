@@ -2,7 +2,7 @@
 Write-Host "--- Iniciando proceso de reproducción del Taller 3 ---" -ForegroundColor Cyan
 
 # Definimos la ruta al ejecutable de R que encontramos
-$R_PATH = "C:/PROGRA~1/R/R-44~1.3/bin/x64/Rscript.exe"
+$R_PATH = "C:\Program Files\R\R-4.4.3\bin\x64\Rscript.exe"
 
 # Fase 2: Simulación
 Write-Host "Ejecutando Fase 2: Simulación..."
