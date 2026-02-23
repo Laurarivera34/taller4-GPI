@@ -1,0 +1,39 @@
+flowchart TD
+
+%% =========================
+%% CONFIGURACION INICIAL
+%% =========================
+A[Crear carpeta proyecto] --> B[Inicializar Git]
+B --> C[Configurar .gitignore]
+C --> D[Documentar entorno<br/>environment.yml o renv.lock]
+
+%% =========================
+%% AUTOMATIZACION
+%% =========================
+D --> E((Repositorio Configurado))
+
+E --> F[runall.sh / runall.ps1]
+
+%% =========================
+%% FLUJO DE DATOS
+%% =========================
+F --> G[data/raw]
+
+G -->|Datos sin procesar| H[scripts/simulacion]
+
+H --> I{¿Datos válidos?}
+
+I -->|Sí| J[data/processed]
+I -->|No| H
+
+J --> K[scripts/analisis]
+
+src[src/ funciones] --> K
+
+K --> L[scripts/visualizacion]
+
+L --> M[results/figures]
+L --> N[results/tables]
+
+M --> O((Proyecto Reproducible))
+N --> O
