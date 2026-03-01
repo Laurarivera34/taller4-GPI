@@ -27,3 +27,8 @@ Posteriormente, se elaboró una versión mejorada del mismo flujo de trabajo uti
 ## Herramientas utilizadas
 Durante el desarrollo del proyecto se utilizaron Git, GitHub, GitHub Desktop, Visual Studio Code, PowerShell, Quire, Mermaid JS y Draw.io, integrando herramientas de gestión, programación y documentación en un flujo de trabajo coherente y reproducible.
 Durante el desarrollo del proyecto se utilizaron Git, GitHub, GitHub Desktop, Visual Studio Code, PowerShell, Quire, Mermaid JS y Draw.io, integrando herramientas de gestión, programación y documentación en un flujo de trabajo coherente y reproducible.
+
+## Fuente de datos
+Los datos utilizados en el análisis se encuentran publicados en Zenodo:
+DOI: https://doi.org/10.5281/zenodo.18819967
+Los scripts leen directamente el archivo desde el repositorio público para garantizar la reproducibilidad externa del proyecto.
