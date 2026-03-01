@@ -2,7 +2,8 @@
 
 library(dplyr)
 
-datos <- read.csv("data/raw/datos_simulados.csv")
+url <- "https://zenodo.org/records/18819967/files/datos_simulados.csv?download=1"
+datos <- read.csv(url)
 
 # Error intencional: función mal escrita
 mean_valor <- mean(datos$variable_y)

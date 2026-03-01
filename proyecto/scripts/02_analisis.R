@@ -1,4 +1,5 @@
-datos <- read.csv("data/raw/datos_simulados.csv")
+url <- "https://zenodo.org/records/18819967/files/datos_simulados.csv?download=1"
+datos <- read.csv(url)
 
 # Calculamos estadísticas sobre 'variable_y'
 resumen <- data.frame(

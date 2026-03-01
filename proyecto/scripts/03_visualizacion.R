@@ -1,5 +1,6 @@
 library(ggplot2)
-datos <- read.csv("data/raw/datos_simulados.csv")
+url <- "https://zenodo.org/records/18819967/files/datos_simulados.csv?download=1"
+datos <- read.csv(url)
 
 p <- ggplot(datos, aes(x = variable_y)) + 
      geom_histogram(fill = "darkblue", bins = 20) + 
